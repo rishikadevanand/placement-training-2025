@@ -1,6 +1,3 @@
-import java.util.Scanner;
---- a/file:///c%3A/PlacementTraining2025/Day04/Problem_01.java
-+++ b/file:///c%3A/PlacementTraining2025/Day04/Problem_01.java
 class Vehicle {
     String brand;
     String model;
