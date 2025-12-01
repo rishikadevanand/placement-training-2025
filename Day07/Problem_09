@@ -1,0 +1,32 @@
+ enum OrderStatus {
+ PLACED {
+        public String getMessage() {
+            return "Your order has been placed successfully.";
+        }
+    },
+    SHIPPED {
+        public String getMessage() {
+            return "Your order is on the way.";
+        }
+    },
+    DELIVERED {
+        public String getMessage() {
+            return "Your order has been delivered.";
+        }
+    },
+    CANCELLED {
+        public String getMessage() {
+            return "Your order has been cancelled.";
+        }
+    };
+
+    public abstract String getMessage();
+}
+
+public class Problem_09 {
+    public static void main(String[] args) {
+        for (OrderStatus status : OrderStatus.values()) {
+            System.out.println(status + ": " + status.getMessage());
+        }
+    }
+}
